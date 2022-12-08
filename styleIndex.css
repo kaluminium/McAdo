@@ -1,0 +1,215 @@
+main > div:hover {
+    transition: 1s;
+    transform: scale(1.15);
+    opacity: 50%;
+}
+
+header div h1{
+        text-shadow: -2px 0px 0px #000000, 2px 0px 0px #000000,0px -2px 0px #000000, 0px 2px 0px #000000;
+        font-size: 3.5rem;
+}
+
+
+header div{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+header div img{
+    width:4.5rem ;
+    border: solid rgb(200, 200, 200) 1px;
+    border-radius: 100%;
+    margin-left: 1.2rem;
+}
+
+
+main{
+    display: grid;
+}
+
+
+div h5{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    user-select: none;
+}
+
+main div {
+    transition: 0.75s;
+    margin: auto;
+}
+
+img{
+    user-select: none;
+}
+
+.table-element > a > img {
+    object-fit: cover;
+}
+
+.table-element{
+    border-radius: 1rem;
+    border: solid 2px black;
+    box-shadow: 0px 3px 0px black;
+    box-shadow: 3px 3px 3px black;
+}
+
+header{
+    background-color: #2A7075;
+    color:white;
+    border-bottom-left-radius:0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom: solid black 4px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0;
+    text-align: right;
+    font-size: small;
+    opacity: 70%;
+}
+
+body{
+    margin: 0;
+}
+
+.presentation{
+    display: flex;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.description h2{
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.description{
+    flex: 3 1 auto;
+}
+
+.contact p, .presentation p{
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.contact, .description{
+    padding: 1.5rem;
+}
+
+.contact{
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+.contact h3{
+    margin-top: 0;
+}
+.contact a:hover{
+    opacity: 70%;
+}
+
+body > h1{
+    margin-bottom: 4rem;
+    margin-top: 0;
+}
+
+.return-top img{
+    width: 2rem;
+}
+.return-top{
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    border-radius: 3rem;
+    background-color: white;
+    box-shadow: 0px 3px 0px black;
+}
+.return-top:active{
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+@media (min-width: 768px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .table-element> a > img{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1rem;
+    }
+    div h4{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        user-select: none;
+        font-family: "helveticaBold";
+    }
+    .table-element{
+        padding: .75rem 1.5rem 1.5rem 1.5rem;
+        margin-bottom: 4.5rem;
+    }
+    .presentation{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    .table-element > a > img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 1rem;
+    }
+    div h4{
+        display: none;
+    }
+    .table-element{
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .presentation{
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .table-element{
+        background-color: #395B64;
+    }
+    .contact a{
+        color: white;
+    }
+    .description{
+        background-color: #263d43;
+    }
+    .contact{
+        background-color: #395B64;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .table-element{
+        background-color: #A5C9CA;
+    }
+    .contact a{
+        color: black;
+    }
+    .description{
+        background-color: #b3d5d6;
+    }
+    .contact{
+        background-color: #A5C9CA;
+    }
+}

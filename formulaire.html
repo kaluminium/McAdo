@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>McAdo - Nous contacter</title>
+        <link rel="icon" href="./images/crousIcon.png">
+        <link rel="stylesheet" href="styleFormulaire.css">
+        <link rel="stylesheet" href="menu.css">
+    </head>
+    <body>
+        <div class="menu">
+            <a href="index.html"><div class="menu-button"><p id="1"></p></div></a>
+            <a href="formulaire.html"><div class="menu-button"><p id="2"></p></div></a>
+            <a href="apropos.html"><div class="menu-button"><p id="3"></p></div></a>
+        </div>
+        <header>
+            <div>
+                <h1 class="title" id="top">McAdo.</h1>
+                <img src="images/crousIcon.png">
+            </div>
+        </header>
+        <main>
+            <div id="card">
+                <form action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+                    <h2><label class="bold">Contact et Abonnement à la Newsletter</label></h2>
+                    <div>
+                        <p>Vous voulez nous faire un retour ? C'est ici que ça se passe !</p> 
+                        <p>Vous voulez recevoir chaque semaine le menu hebdomadaire ? Remplissez le formulaire et cliquez sur le bouton adequat ;) .</p>
+                    </div>
+                        <div class ="question">
+                            <label for="lastname">Votre nom</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Bocuse" required>
+                        </div>
+                        <div class ="question">
+                            <label for="firstname">Votre prénom</label>
+                            <input id="firstname" type="text" name="firstname" placeholder="Paul" required>
+                        </div>
+                        <div class ="question">
+                            <label for="email">Votre e-mail </label>
+                            <input id="email" type="email" name="email" placeholder="paul.bocuse@univ-lyon1.fr" required>
+                        </div>
+                        <div class="question">
+                            <label for="nbrepas"> Mangez-vous au R.U ? </label>
+                                <select id ="nbrepas" name="nbrepas">
+                                    <option value="0" selected>Jamais</option>
+                                    <option value="1">1 fois par semaine</option>
+                                    <option value="2">2 fois par semaine</option>
+                                    <option value="3">3 fois par semaine</option>
+                                    <option value="4">4 fois par semaine</option>
+                                    <option value="5+">5 fois ou plus par semaine</option>
+                                </select>
+                        </div>
+                        <div class="question">
+                            <label for="message">Un message à nous transmettre ?</label>
+                            <textarea id="message" name="message" placeholder="500 caractères max" maxlength="500"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <label for="interet1">Recevoir les menus par mail automatiquement tous les dimanches</label>
+                            <input id="interet1" type="checkbox">
+                        </div>
+                        <div class="checkbox">
+                            <label for="validation">Je certifie mes informations exactes</label>
+                            <input id="validation" type="checkbox" required>
+                        </div>
+                        <div>
+                            <button>Envoyez votre requête</button>
+                        </div>
+                    </form>    
+            </div>
+        </main>
+        <footer>
+            <p>© McAdo</p>
+            <p>Site fait par Lucas Godet et Luka Lindberg</p>
+            <a href="#top">
+                <div class="return-top">
+                    <img src="images/arrow.png" alt="flèche vers le haut entouré d'un cercle">
+                </div>
+            </a>
+        </footer>
+    </body>
+</html>
